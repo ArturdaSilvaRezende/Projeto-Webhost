@@ -1,6 +1,4 @@
 @import "~bootstrap/scss/bootstrap";
-
-
-body {
-     background-image: url('../img/pronouns-adjectives.jpg');
-}
+@import "./reset.scss";
+@import "./grid-container.scss";
+@import "./header.scss";

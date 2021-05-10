@@ -1,0 +1,53 @@
+
+//background-btn
+
+%btn-green-gradient {
+    background: #12e6ca;
+    background: linear-gradient(45deg, #12e6ca 0%, #8be55d 100%);
+    border: none;
+    color: #fff;
+    transition: ease 0.3s;
+
+    &:hover {
+        background: #627bed;
+        border: 1px solid #627bed;
+    }
+}
+
+%btn-blue-gradient {
+    background: #56c8fb;
+    background: linear-gradient(45deg, #56c8fb 0%, #627bed 100%);
+    border: none;
+    color: #fff;
+    transition: ease 0.3s;
+
+    &:hover {
+        background: #12e6ca;
+        background: linear-gradient(45deg, #12e6ca 0%, #8be55d 100%);
+    }
+}
+
+//background-area
+
+%bg-green-gradient {
+    background: #12e6ca;
+    background: linear-gradient(45deg, #12e6ca 0%, #8be55d 100%);
+    border: none;
+    color: #fff;
+}
+
+%bg-blue-gradient {
+    background: #56c8fb;
+    background: linear-gradient(45deg, #56c8fb 0%, #627bed 100%);
+    border: none;
+    color: #fff;
+}
+
+//border radius
+
+@mixin border-radius-global($property) {
+    -webkit-border-radius: $property;
+    -moz-border-radius: $property;
+    -ms-border-radius: $property;
+    -o-border-radius: $property;
+}

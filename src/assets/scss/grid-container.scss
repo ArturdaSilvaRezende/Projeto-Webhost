@@ -1,0 +1,9 @@
+.grid-contentainer {
+   display: grid;
+   grid-template: 
+   "header header header";
+}
+
+.header {
+    grid-area: header;
+}

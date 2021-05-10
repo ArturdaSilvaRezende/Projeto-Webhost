@@ -1,5 +1,12 @@
+//Font Awesome
+import "@fortawesome/fontawesome-free/js/fontawesome";
+import "@fortawesome/fontawesome-free/js/solid";
+import "@fortawesome/fontawesome-free/js/regular";
+import "@fortawesome/fontawesome-free/js/brands";
+
+//Bootstrap
 import "bootstrap";
 import { createPopper } from "@popperjs/core";
-import "../scss/main.scss";
 
-import "../img/pronouns-adjectives.jpg";
+//main scss
+import "../scss/main.scss";

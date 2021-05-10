@@ -1,5 +1,5 @@
 {
-  "name": "Webhost",
+  "name": "Projeto-Webhost",
   "version": "1.0.0",
   "description": "Este e um projeto que tem como foco a prática Bootstrap 5 e JQuery.",
   "private": true,
@@ -30,6 +30,7 @@
     "webpack-merge": "^4.2.2"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3",
     "@popperjs/core": "^2.9.2",
     "bootstrap": "^5.0.0"
   }
