@@ -1,10 +1,13 @@
 @import "./style-global.scss";
 
 .header {
- 
-    #navbar-header {
+    
+    position: absolute;
+    top: 30px;
+    z-index: 3;
+    width: 100%;
 
-        padding-top: 40px;
+    #navbar-header {
 
         a {
             font-size: 14px;
@@ -25,7 +28,6 @@
             }
         }//button control menu
         
-        //menu
         #menu-main {
     
             ul {
@@ -56,10 +58,16 @@
     }
     
     @media screen and (max-width: 992px){
+        
+        position: static;
+        background-color: #000;
+        width: 100%;
+       
+
         #navbar-header {
 
             .logo {
-                margin-left: 15px;
+                margin-left: 10px;
             }
 
             #menu-main {

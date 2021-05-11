@@ -10,3 +10,6 @@ import { createPopper } from "@popperjs/core";
 
 //main scss
 import "../scss/main.scss";
+
+//rotas img
+import "./rotas-img";

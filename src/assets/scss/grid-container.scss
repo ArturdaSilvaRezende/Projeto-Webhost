@@ -1,9 +1,22 @@
 .grid-contentainer {
    display: grid;
-   grid-template: 
-   "header header header";
+   grid-template-areas: 
+   "header header header"
+   "slide-container slide-container slide-container";
+
+   @media screen and (max-width: 992px) {
+       grid-template-columns: 100%;
+       grid-template-areas: 
+       "header"
+       "slide-container";
+   }
 }
 
 .header {
     grid-area: header;
 }
+
+.slide-container {
+    grid-area: slide-container;
+}
+
