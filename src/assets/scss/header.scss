@@ -98,3 +98,21 @@
         }
     }
 }
+
+@keyframes headerShow {
+    from {
+        top: -50%;
+    }
+
+    to {
+        top: 0;
+    }
+}
+
+.header-animation-show {
+    position: fixed;
+    background-color: #000 !important;
+    animation: headerShow  1s ease-in;
+    padding: 10px;
+    top: 0;
+}

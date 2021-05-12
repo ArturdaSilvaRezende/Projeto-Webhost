@@ -45,6 +45,11 @@ module.exports = {
       template: "./src/index.html",
       minify: false,
     }),
+    new webpack.ProvidePlugin({
+      $: "jquery",
+      jQuery: "jquery",
+      "window.JQuery": "jquery",
+    }),
     new CleanWebpackPlugin(),
     new webpack.SourceMapDevToolPlugin({}),
   ],
