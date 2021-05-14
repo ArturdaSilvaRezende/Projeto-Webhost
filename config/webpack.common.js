@@ -16,6 +16,8 @@ module.exports = {
 
   devServer: {
     contentBase: PATH.dist,
+    compress: true,
+    port: 9001,
   },
 
   module: {
