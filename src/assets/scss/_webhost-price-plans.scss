@@ -1,0 +1,50 @@
+@import "./style-global";
+
+.price-plans-container {
+
+    .card {
+
+        .pricing-item {
+            
+            sup {
+                font-size: 1.2rem;
+                position: relative;
+                top: -20px;
+            }
+
+            .pricing-number {
+                @extend %bg-green-gradient;
+                font-size: 3rem;
+                display: inline-block;
+                font-family: Arial, Helvetica, sans-serif;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                display: inline-block;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+        }
+
+        .card-body {
+
+            .btn-chosen-plan {
+                @extend %bg-green-gradient;
+                @include border-radius-global(30px);
+                display: block;
+
+                &:hover {
+                    @extend %bg-blue-gradient;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 992px) {
+        
+        justify-content: space-evenly !important;
+        flex-wrap: wrap;
+        
+        .card {
+            margin-bottom: 40px;
+        }
+    }
+}
