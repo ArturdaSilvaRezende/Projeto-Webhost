@@ -13,6 +13,9 @@ import $ from "jquery";
 window.jQuery = $;
 window.$ = $;
 
+//glider js
+import "./gliderCarousel";
+
 //main scss
 import "../scss/main.scss";
 
