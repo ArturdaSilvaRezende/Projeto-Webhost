@@ -13,3 +13,7 @@ import "../img/person_1.jpg";
 import "../img/person_2.jpg";
 import "../img/person_3.jpg";
 import "../img/person_4.jpg";
+
+//webhost-how-it-works
+import "../img/dashboard_full_1.jpg";
+import "../img/dashboard_full_2.jpg";
