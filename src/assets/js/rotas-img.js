@@ -17,3 +17,10 @@ import "../img/person_4.jpg";
 //webhost-how-it-works
 import "../img/dashboard_full_1.jpg";
 import "../img/dashboard_full_2.jpg";
+
+//webhost-our-clients
+import "../img/partner-1.png";
+import "../img/partner-2.png";
+import "../img/partner-3.png";
+import "../img/partner-4.png";
+import "../img/partner-5.png";
