@@ -3,14 +3,16 @@
    grid-template-areas: 
    "header header header"
    "slide-container slide-container slide-container"
-   "main main main";
+   "main main main"
+   "footer footer footer";
 
    @media screen and (max-width: 992px) {
        grid-template-columns: 100%;
        grid-template-areas: 
        "header"
        "slide-container"
-       "main";
+       "main"
+       "footer";
    }
 }
 
@@ -26,5 +28,9 @@
 .main {
     grid-area: main;
     overflow-x: hidden;
+}
+
+.footer {
+    grid-area: footer;
 }
 

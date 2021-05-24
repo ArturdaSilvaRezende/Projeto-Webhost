@@ -24,3 +24,8 @@ import "../img/partner-2.png";
 import "../img/partner-3.png";
 import "../img/partner-4.png";
 import "../img/partner-5.png";
+
+//webhost-recent-blog
+import "../img/image_1.jpg";
+import "../img/image_2.jpg";
+import "../img/image_3.jpg";
