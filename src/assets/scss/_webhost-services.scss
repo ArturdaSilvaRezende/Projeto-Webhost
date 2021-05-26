@@ -1,0 +1,38 @@
+@import "./style-global.scss";
+
+.webhost-services {
+
+    .card-area {
+
+        .card {
+            margin: 30px 20px 0 0;
+        }
+
+        .icon-container {
+            @extend %bg-green-gradient;
+            @include border-radius-global(50%);
+            width: 80px;
+            height: 80px;
+            line-height: 90px;
+            margin: 20px auto 20px auto;
+            text-align: center;
+        }
+
+    }
+
+    @media screen and (max-width: 992px) {
+
+        .title-webhost-services {
+            p {
+                width: 90% !important;
+                margin-top: 15px;
+            }
+        }
+        .card-area {
+            
+            .card {
+                margin: 20px auto 0 auto;
+            }
+        }
+    }
+}

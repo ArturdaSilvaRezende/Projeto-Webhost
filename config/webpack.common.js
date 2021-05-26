@@ -16,6 +16,8 @@ module.exports = {
 
   devServer: {
     contentBase: PATH.dist,
+    compress: true,
+    port: 9001,
   },
 
   module: {
@@ -44,6 +46,11 @@ module.exports = {
       filename: "index.html",
       template: "./src/index.html",
       minify: false,
+    }),
+    new webpack.ProvidePlugin({
+      $: "jquery",
+      jQuery: "jquery",
+      "window.JQuery": "jquery",
     }),
     new CleanWebpackPlugin(),
     new webpack.SourceMapDevToolPlugin({}),

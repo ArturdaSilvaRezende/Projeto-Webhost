@@ -1,0 +1,71 @@
+@import "style-global";
+
+.webhost-how-it-works {
+
+    .title-howWorks {
+        margin: 2% 0 5% 0;
+    }
+
+    #pills-tab {
+
+        .active {
+            background: #12e6ca;
+            background: linear-gradient(45deg, #12e6ca 0%, #8be55d 100%);
+            border: none;
+            font-weight: normal !important;
+            color: #fff !important;
+            border: none !important;
+        }
+
+        .btn-control-howWorks {
+            @include border-radius-global(30px);
+            width: 160px;
+            margin-right: 10px;
+
+            &:hover {
+                background: #12e6ca;
+                background: linear-gradient(45deg, #12e6ca 0%, #8be55d 100%);
+                border: none;
+                font-weight: normal !important;
+                color: #fff !important;
+                border: none !important;
+            }
+        }
+       
+    }
+
+    #pills-tabContent {
+        margin-top: 6%;
+    }
+
+    @media screen and (max-width: 767px) {
+
+        .title-howWorks {
+            margin: 2% 0 50px 0;
+        }
+
+        #pills-tab {
+         
+            align-items: center;
+            flex-wrap: wrap;
+            width: 100vw;
+            margin-left: -40px;
+
+            .btn-control-howWorks  {
+                margin-bottom: 20px;
+                width: 140px;
+            }
+        }
+
+        #pills-tabContent {
+
+            .row {
+
+               figure {
+                   margin: 20px 0 40px 0;
+               }
+            }
+        }
+        
+    }
+}

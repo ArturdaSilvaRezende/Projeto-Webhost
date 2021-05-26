@@ -1,0 +1,13 @@
+@import "./style-global";
+
+.btn-back-top {
+
+    @extend %btn-green-gradient;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 40px;
+    padding: 5px;
+    z-index: 999;
+
+}

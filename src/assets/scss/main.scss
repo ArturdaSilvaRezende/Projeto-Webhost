@@ -1,6 +1,18 @@
 @import "~bootstrap/scss/bootstrap";
-
-
-body {
-     background-image: url('../img/pronouns-adjectives.jpg');
-}
+@import "../Glider.js/glider";
+@import "./reset";
+@import "./grid-container";
+@import "./header";
+@import "./slide-container";
+@import "./search-domain";
+@import "./webhost-services";
+@import "./webhost-hosted";
+@import "./webhost-price-plans";
+@import "./webhost-people-choice";
+@import "./webhost-customer-reviews";
+@import "./webhost-how-it-works";
+@import "./webhost-our-clients";
+@import "./webhost-recent-blog";
+@import "./footer";
+@import "./btn-back-top";
+@import "./scroll-animation";

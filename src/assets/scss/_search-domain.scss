@@ -1,0 +1,46 @@
+@import "./style-global.scss";
+
+.search-domain {
+    overflow: hidden;
+    padding: 100px 0 100px 0;
+    background-color:#233142 !important;
+
+    .row {
+
+        .select-domain {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            cursor: pointer;
+        }
+
+        .btb-search-domain {
+            width: 30%;
+            @extend %btn-blue-gradient;
+        }
+    }
+   
+    @media screen and (max-width: 767px) {
+        .row {
+            padding: 0 10px 0 10px;
+
+            .input-group {
+                margin: 40px 0;
+                .select-domain {
+                    width: 80px;
+                }
+
+                .btb-search-domain {
+                    width: 80px;
+                }
+                input {
+                    width: 60%;
+                }
+            }
+
+            .domain-prices {
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+            }
+        }
+    }
+}

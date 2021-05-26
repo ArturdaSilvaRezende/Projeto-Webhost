@@ -1,0 +1,140 @@
+@import "./style-global";
+
+.webhost-customer-reviews {
+
+    background: #56c8fb;
+    background: linear-gradient(45deg, #56c8fb 0%, #627bed 100%);
+    position: relative;
+
+    .glider {
+
+        position: relative;
+
+        .customer-rewiews-item {
+            padding: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            margin-left: 30px;
+            width: 300px !important;
+
+            img {   
+                width: 50%;
+                display: block;
+                margin: 0 auto;
+                @include border-radius-global(50%);
+            }
+
+            .description {
+
+                p {
+                    color: #f5eaea;
+                    width: 100%;
+                    text-align: left;
+                    margin: 40px auto;
+                    text-align: center;
+                    
+                }
+
+              
+                .profession {
+                    margin: 0;
+                    text-align: left !important;
+                }
+            }
+
+        }
+
+    }
+
+    .btn-carousel-container {
+
+        position: absolute;
+        top: 26%;
+        right: 50px;
+
+        .btn-carousel-customer {
+            background-color: transparent;
+            border: none;
+        }
+
+        .customer-reviews-prev {
+            width: 100px;
+            @extend %bg-green-gradient;
+            @include border-radius-global(30px);
+            display: block;
+
+            &:hover {
+                @extend %bg-blue-gradient;
+            }
+        }
+
+        .customer-reviews-next {
+            width: 100px;
+            @extend %bg-green-gradient;
+            @include border-radius-global(30px);
+            display: block;
+
+            &:hover {
+                @extend %bg-blue-gradient;
+            }
+        }
+    }
+
+      
+
+    @media screen  and (max-width: 767px) {
+        
+        .customer-rewiews-title {
+
+            h2 {
+                width: 80%;
+                margin: 0 auto;
+            }
+
+            p {
+                width: 92% !important;
+            }
+        }
+
+        .glider {
+
+            .customer-rewiews-item {
+                img {
+                    width: 100%; 
+                }
+            }
+        }
+
+        .btn-carousel-container {
+            position: relative;
+            right: -20px;
+        }
+
+        .dots {
+            margin: 30px 0 0 0;
+        }
+    }
+
+    @media screen  and (min-width: 768px) and (max-width: 992px) {
+
+        .customer-rewiews-title {
+
+            h2 {
+                width: 80%;
+                margin: 0 auto;
+            }
+
+            p {
+                width: 100% !important;
+            }
+        }
+
+        .btn-carousel-container {
+            position: relative;
+            right: -50px;
+        }
+
+        .dots {
+            margin: 30px 0 0 0;
+        }
+    }
+}

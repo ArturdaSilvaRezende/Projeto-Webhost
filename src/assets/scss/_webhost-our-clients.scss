@@ -1,0 +1,55 @@
+.webhost-our-clients {
+    background-color: #233142;
+
+    .row {
+
+        margin-top: 5%;
+
+        figure {
+
+            img {
+                width: 100%;
+                display: block;
+            }
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        
+        .ourClients-title {
+         
+            width: 100% !important;
+            padding-bottom: 7%;
+
+            p {
+                max-width: 75%;
+                margin: 0 auto;
+            }
+
+        }
+
+        .row {
+
+            figure {
+                
+                img {
+                    margin: 0 auto;
+                    width: 50%;
+                    
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width: 767px) and (max-width: 992px) {
+
+        .ourClients-title {
+            width: 100% !important;
+            margin-bottom: 60px !important;
+            p {
+                width: 80%;
+                margin: 0 auto;
+            }
+        }
+    }
+}
