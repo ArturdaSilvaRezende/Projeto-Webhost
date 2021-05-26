@@ -34,6 +34,14 @@
     
                 li {
                     padding-right: 20px;
+
+                    a {
+                        &:hover {
+                            background-color: rgba(0,0,0,0.4);
+                            color: #56c8fb !important;
+                            font-weight: bold;
+                        }
+                    }
                 }
             }
     
