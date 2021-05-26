@@ -24,3 +24,12 @@ import "./rotas-img";
 
 //Animations
 import "./headerAnimation";
+
+//btn back top
+import "./btn-back-top";
+
+//scroll animation
+import "./scrollAnime";
+
+//counter animation
+import "./counter";
