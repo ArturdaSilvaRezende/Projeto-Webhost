@@ -20,13 +20,9 @@
   $(function () {
     let target = $(".scroll-anime");
     let offSet = ($(window).height() * 3) / 4;
-<<<<<<< HEAD
 
     animaScroll();
 
-=======
-    animaScroll();
->>>>>>> b92d92d039e0531b23e5fb8b1d38678ce039b2b1
     function animaScroll() {
       let documentTop = $(document).scrollTop();
 
@@ -34,9 +30,11 @@
         let itenTop = $(this).offset().top;
 
         if (documentTop > itenTop - offSet) {
-          $(this).addClass("anime-start");
+          $(this).css("opacity", "1").css("transform", "translate3d(0, 0, 0)");
         } else {
-          $(this).removeClass("anime-start");
+          $(this)
+            .css("opacity", "0")
+            .css("transform", "translate3d(0, -40px, 0)");
         }
       });
     }
