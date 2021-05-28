@@ -23,8 +23,6 @@
 
     animaScroll();
 
-    animaScroll();
-
     function animaScroll() {
       let documentTop = $(document).scrollTop();
 
@@ -32,9 +30,11 @@
         let itenTop = $(this).offset().top;
 
         if (documentTop > itenTop - offSet) {
-          $(this).addClass("anime-start");
+          $(this).css("opacity", "1").css("transform", "translate3d(0, 0, 0)");
         } else {
-          $(this).removeClass("anime-start");
+          $(this)
+            .css("opacity", "0")
+            .css("transform", "translate3d(0, -40px, 0)");
         }
       });
     }
