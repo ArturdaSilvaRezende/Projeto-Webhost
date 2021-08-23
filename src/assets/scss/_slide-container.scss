@@ -1,228 +1,207 @@
 @import "./style-global.scss";
 
 .slide-container {
-    position: relative;
-    z-index: 0;
-    background: #fb83b5;
-    background: linear-gradient(45deg, #fb83b5 0%, #9a51ff 100%);
-    
+  position: relative;
+  z-index: 0;
+  background: #fb83b5;
+  background: linear-gradient(45deg, #fb83b5 0%, #9a51ff 100%);
+
+  #carouselArea {
+    .carousel-indicators {
+      padding: 130px 0 30px 0;
+
+      button {
+        @include border-radius-global(50%);
+        width: 18px;
+        height: 18px;
+        border: 2px solid #fff;
+        box-shadow: 0 0 5px #fb83b5 inset;
+      }
+    }
+
+    .carousel-inner {
+      -webkit-tap-highlight-color: transparent;
+
+      .bg-slide-01 {
+        background: url("../img/bg_1.jpg");
+        background-size: 100% 100%;
+        z-index: 0;
+        background-repeat: no-repeat;
+        background-position: center center !important;
+        padding: 130px 0 130px 0;
+
+        .overlay {
+          z-index: -1;
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          opacity: 0.92;
+          background: url("../img/bg-gradient-carousel.png");
+        }
+      }
+
+      .bg-slide-02 {
+        background: url("../img/bg_2.jpg");
+        background-size: 100% 100%;
+        z-index: 0;
+        background-repeat: no-repeat;
+        background-position: center center !important;
+        padding: 130px 0 130px 0;
+
+        .overlay {
+          z-index: -1;
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          opacity: 0.92;
+          background: url("../img/bg-gradient-carousel.png");
+        }
+      }
+
+      .carousel-item {
+        img {
+          width: 50%;
+        }
+
+        .carousel-content {
+          display: flex !important;
+          align-items: center;
+
+          .slide-caption {
+            width: 50%;
+
+            h1 {
+              width: 70%;
+              margin: 0 auto;
+            }
+
+            p {
+              width: 70%;
+              margin: 30px auto 0 auto;
+            }
+
+            .btn-container {
+              margin: 30px auto 0 auto;
+              width: 70%;
+              display: flex;
+
+              .get-started-carousel {
+                @extend %bg-green-gradient;
+                @include border-radius-global(30px);
+                width: 45%;
+                padding: 12px;
+                display: inline-block;
+                text-align: center;
+                margin-right: 5px;
+
+                &:hover {
+                  color: #000;
+                  transition: ease 0.3s;
+                }
+              }
+
+              .read-more-carousel {
+                @extend %bg-blue-gradient;
+                @include border-radius-global(30px);
+
+                width: 45%;
+                padding: 12px;
+                display: inline-block;
+                text-align: center;
+
+                &:hover {
+                  color: #000;
+                  transition: ease 0.3s;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 992px) {
     #carouselArea {
-
-        .carousel-indicators {
-
-            padding: 130px 0 30px 0;
-
-            button {
-                @include border-radius-global(50%);
-                width: 18px;
-                height: 18px;
-                border: 2px solid #fff;
-                box-shadow: 0 0 5px #fb83b5 inset;
-            }
+      .carousel-inner {
+        .bg-slide-01 {
+          padding: 70px 0 60px 0;
+          height: 750px;
         }
 
-        .carousel-inner {
-
-            -webkit-tap-highlight-color: transparent;
-        
-            .bg-slide-01 {
-                background: url("../img/bg_1.jpg");
-                background-size: 100% 100%;
-                z-index: 0;
-                background-repeat: no-repeat;
-                background-position: center center !important;
-                padding: 130px 0 130px 0;
-    
-                .overlay {
-                    z-index: -1;
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    right: 0;
-                    bottom: 0;
-                    opacity: 0.920;
-                    background: url('../img//bg-gradient-carousel.png');
-                }
-
-            }
-
-            .bg-slide-02 {
-                background: url("../img/bg_2.jpg");
-                background-size: 100% 100%;
-                z-index: 0;
-                background-repeat: no-repeat;
-                background-position: center center !important;
-                padding: 130px 0 130px 0;
-
-                .overlay {
-                    z-index: -1;
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    right: 0;
-                    bottom: 0;
-
-                    opacity: 0.920;
-                    background: url('../img//bg-gradient-carousel.png');
-                }
-            }
-
-            .carousel-item {
-
-                img {
-                    width: 50%;
-                }
-
-                .coursel-content {
-                    display: flex !important;
-                    align-items: center;
-
-                    .slide-caption {
-                        width: 50%;
-                
-                        h1 {
-                            width: 70%;
-                            margin: 0 auto;
-                        }
-
-                        p {
-                            width: 70%;
-                            margin: 30px auto 0 auto;
-                        }
-
-                        .btn-container {
-                            margin: 30px auto 0 auto;
-                            width: 70%;
-                            display: flex;
-
-                            .get-started-carousel {
-                                @extend %bg-green-gradient;
-                                @include border-radius-global(30px);
-                                width: 45%;
-                                padding: 12px;
-                                display: inline-block;
-                                text-align: center;
-                                margin-right: 5px;
-
-                                &:hover {
-                                    color: #000;
-                                    transition: ease 0.3s;
-                                }
-                            }
-
-                            .read-more-carousel {
-                                @extend %bg-blue-gradient;
-                                @include border-radius-global(30px);
-
-                                width: 45%;
-                                padding: 12px;
-                                display: inline-block;
-                                text-align: center;
-
-                                &:hover {
-                                    color: #000;
-                                    transition: ease 0.3s;
-                                }
-                            }
-                        }
-                    }
-                }
-                
-            }
+        .bg-slide-02 {
+          padding: 70px 0 50px 0;
+          height: 750px;
         }
+        .carousel-item {
+          .carousel-content {
+            display: flex;
+            flex-direction: column;
+
+            .slide-caption {
+              width: 90%;
+              text-align: center;
+
+              h1 {
+                width: 100%;
+              }
+            }
+
+            img {
+              width: 70%;
+              margin-top: 20px;
+            }
+          }
+        }
+      }
     }
+  }
 
-    @media screen and (min-width: 768px) and (max-width: 992px) {
-        
-        #carouselArea {
+  @media screen and (max-width: 767px) {
+    #carouselArea {
+      .carousel-indicators {
+        padding: 0;
+      }
 
-            .carousel-inner {
-
-                .bg-slide-01 {
-                    padding: 70px 0 60px 0;
-                    height: 750px;
-                }
-
-                .bg-slide-02 {
-                    padding: 70px 0 50px 0;
-                    height: 750px;
-
-                }
-                .carousel-item  {
-
-                    .coursel-content {
-
-                        display: flex; 
-                        flex-direction: column;
-                
-                        .slide-caption {
-                            width: 90%;
-                            text-align: center;
-
-                            h1 {
-                                width: 100%;
-                            }
-
-                        }
-
-                        img {
-                            width: 70%;
-                            margin-top: 20px;
-                        }
-                    }
-                }
-            }
+      .carousel-inner {
+        .bg-slide-01 {
+          padding-top: 100px;
+          height: 700px;
         }
-    }
 
-    @media screen and (max-width: 767px) {
-
-        #carouselArea {
-
-            .carousel-indicators {
-                padding: 0;
-            }
-    
-            .carousel-inner {
-
-                .bg-slide-01 {
-                    padding-top: 100px;
-                    height: 700px;
-                }
-
-                .bg-slide-02 {
-                    padding-top: 100px;
-                    height: 700px;
-
-                }
-                .carousel-item  {
-
-                    .coursel-content {
-
-                        display: flex; 
-                        flex-direction: column;
-                    
-                        .slide-caption {
-                            width: 100%;
-                            text-align: center;
-
-                            h1 {
-                                width: 80%;
-                            }
-
-                            .btn-container {
-                                flex-wrap: wrap;
-                            }
-
-                        }
-
-                        img {
-                            width: 80%;
-                            margin-top: 20px;
-                        }
-                    }
-                }
-            }
+        .bg-slide-02 {
+          padding-top: 100px;
+          height: 700px;
         }
+        .carousel-item {
+          .carousel-content {
+            display: flex;
+            flex-direction: column;
+
+            .slide-caption {
+              width: 100%;
+              text-align: center;
+
+              h1 {
+                width: 80%;
+              }
+
+              .btn-container {
+                flex-wrap: wrap;
+              }
+            }
+
+            img {
+              width: 80%;
+              margin-top: 20px;
+            }
+          }
+        }
+      }
     }
+  }
 }

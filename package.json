@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Este e um projeto que tem como foco a prática Bootstrap 5 e JQuery.",
   "private": true,
+  
   "scripts": {
     "dev": "npx webpack --env MODE=development mode=development",
     "start": "webpack serve --env MODE=development mode=development --open",
@@ -40,4 +41,5 @@
     "bootstrap": "^5.0.0",
     "jquery": "^3.6.0"
   }
+  
 }

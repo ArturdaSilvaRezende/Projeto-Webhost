@@ -1,126 +1,101 @@
 @import "./style-global.scss";
 
 .header {
-    
-    position: absolute;
-    top: 30px;
-    z-index: 3;
+  position: absolute;
+  top: 30px;
+  z-index: 3;
+  width: 100%;
+
+  #navbar-header {
+    a {
+      font-size: 14px;
+      font-weight: 400 !important;
+      opacity: 1 !important;
+    } //link header global
+
+    .logo {
+      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    }
+
+    #control-menu-header {
+      padding: 10px;
+      border: transparent !important;
+      .menu-text {
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        padding-left: 2px;
+      }
+    } //button control menu
+
+    #menu-main {
+      ul {
+        li {
+          padding-right: 20px;
+
+          a {
+            &:hover {
+              background-color: rgba(0, 0, 0, 0.4);
+              color: #56c8fb !important;
+              font-weight: bold;
+            }
+          }
+        }
+      }
+
+      .get-started {
+        display: block;
+        background-color: #fff;
+        width: 120px;
+        @include border-radius-global(30px);
+        padding-right: 0;
+
+        a {
+          background: #fb83b5;
+          background: linear-gradient(to right, #fb83b5 0%, #9a51ff 100%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          display: inline-block;
+          font-family: Arial, Helvetica, sans-serif;
+          font-weight: bolder !important;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 992px) {
+    position: static;
+    background-color: #000 !important;
     width: 100%;
 
     #navbar-header {
+      .logo {
+        margin-left: 10px;
+      }
 
-        a {
-            font-size: 14px;
-            font-weight: 400 !important;
-            opacity: 1 !important;
-        }//link header global
-    
-        .logo {
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      #menu-main {
+        margin-left: 20px !important;
+
+        li {
+          margin-bottom: 20px;
         }
 
-        #control-menu-header {
-            padding: 10px;
-            border: transparent !important;
-            .menu-text {
-                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-                padding-left: 2px;
-            }
-        }//button control menu
-        
-        #menu-main {
-    
-            ul {
-    
-                li {
-                    padding-right: 20px;
+        .get-started {
+          background: #56c8fb;
+          background: linear-gradient(45deg, #56c8fb 0%, #627bed 100%);
+          border: none;
+          width: 100%;
+          text-align: left !important;
+          padding-left: 20px;
+          margin-left: -20px;
 
-                    a {
-                        &:hover {
-                            background-color: rgba(0,0,0,0.4);
-                            color: #56c8fb !important;
-                            font-weight: bold;
-                        }
-                    }
-                }
-            }
-    
-            .get-started {
-                display: block;
-                background-color: #fff;
-                width: 120px;
-                @include border-radius-global(30px);
-                padding-right: 0;
-    
-                a {
-                    background: #fb83b5;
-                    background: linear-gradient(to right, #fb83b5 0%, #9a51ff 100%);
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;
-                    display: inline-block;
-                    font-family: Arial, Helvetica, sans-serif;
-                    font-weight: bolder !important;
-                }   
-            }
+          a {
+            background-color: #fff;
+            background: linear-gradient(#ffffff 100%, #ffffff 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            width: 100%;
+          }
         }
+      }
     }
-    
-    @media screen and (max-width: 992px){
-        
-        position: static;
-        background-color: #000;
-        width: 100%;
-       
-
-        #navbar-header {
-
-            .logo {
-                margin-left: 10px;
-            }
-
-            #menu-main {
-                margin-left: 20px !important;
-
-                li {
-                    margin-bottom: 20px;
-                }
-
-                .get-started {
-                    background: #56c8fb;
-                    background: linear-gradient(45deg, #56c8fb 0%, #627bed 100%);
-                    border: none;
-                    width: 100%;
-                    text-align: left !important;
-                    padding-left: 20px;
-                    margin-left: -20px;
-
-                    a {
-                        background-color: #fff;
-                        background: linear-gradient( #ffffff 100%, #ffffff 100%);
-                        -webkit-background-clip: text;
-                        -webkit-text-fill-color: transparent;
-                        width: 100%;
-                    }
-                }
-            }
-        }
-    }
-}
-
-@keyframes headerShow {
-    from {
-        top: -50%;
-    }
-
-    to {
-        top: 0;
-    }
-}
-
-.header-animation-show {
-    position: fixed;
-    background-color: #000 !important;
-    animation: headerShow  1s ease-in;
-    padding: 10px;
-    top: 0;
+  }
 }

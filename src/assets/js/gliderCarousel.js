@@ -2,7 +2,7 @@ import "../Glider.js/glider.min";
 
 new Glider(document.querySelector(".glider"), {
   draggable: true,
-  dots: ".dots",
+  dots: false,
   arrows: {
     prev: ".customer-reviews-prev",
     next: ".customer-reviews-next",
