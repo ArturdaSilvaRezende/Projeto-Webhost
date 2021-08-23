@@ -1,3 +1,6 @@
+//favicon
+import "../img/favicon.png";
+
 //slide image
 import "../img/bg_1.jpg";
 import "../img/bg_2.jpg";

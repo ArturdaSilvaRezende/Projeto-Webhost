@@ -26,7 +26,7 @@
             {
               duration: 4000,
               easing: "swing",
-              //O step com base no conteúdo da variável countTo, vai execultar a extrutura abaixo a cada passo da animação
+              //O step com base no conteúdo da variável countTo, vai execultar a estrutura abaixo a cada passo da animação
               step: function () {
                 //A linha abaixo vai receber o conteúdo (os numeros) e arredondar e retornar um numero inteiro
                 $(this).text(Math.floor(this.counterValue));
