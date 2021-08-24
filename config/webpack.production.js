@@ -1,6 +1,7 @@
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
 const common = require("./webpack.common");
+const whitelister = require("purgecss-whitelister");
 const merge = require("webpack-merge");
 const purgeCss = require("purgecss-webpack-plugin");
 const glob = require("glob");
@@ -60,7 +61,10 @@ const config = {
       filename: "assets/css/style.css",
     }),
     new purgeCss({
+      keyframes: false,
+      styleExtensions: [".css"],
       paths: glob.sync("./**/*.html", { nodir: true }),
+      whitelist: whitelister("node_modules/bootstrap/dist/css/bootstrap.css"),
     }),
   ],
 };

@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "Este e um projeto que tem como foco a prática Bootstrap 5 e JQuery.",
   "private": true,
-  
   "scripts": {
     "dev": "npx webpack --env MODE=development mode=development",
     "start": "webpack serve --env MODE=development mode=development --open",
@@ -26,6 +25,7 @@
     "postcss-loader": "^5.3.0",
     "postcss-preset-env": "^6.7.0",
     "purgecss-webpack-plugin": "^2.0.6",
+    "purgecss-whitelister": "^2.4.0",
     "resolve-url-loader": "^4.0.0",
     "sass-loader": "^11.0.1",
     "style-loader": "^2.0.0",
@@ -41,5 +41,4 @@
     "bootstrap": "^5.0.0",
     "jquery": "^3.6.0"
   }
-  
 }
